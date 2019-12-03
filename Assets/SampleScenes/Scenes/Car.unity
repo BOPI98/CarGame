@@ -7134,7 +7134,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: 170, y: 50}
+  m_SizeDelta: {x: 247.2, y: 275.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891719691
 MonoBehaviour:
@@ -8864,6 +8864,7 @@ MonoBehaviour:
   LapCount: {fileID: 1058308612}
   FinishLabel: {fileID: 891719689}
   CarDisable: {fileID: 2017856520}
+  Pos: {fileID: 1803894748}
 --- !u!1 &1215373507
 GameObject:
   m_ObjectHideFlags: 0
@@ -12876,6 +12877,7 @@ MonoBehaviour:
   progressStyle: 0
   pointToPointThreshold: 0.2
   target: {fileID: 1992516338}
+  progressDistance: 0
 --- !u!114 &1719234794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13377,6 +13379,7 @@ GameObject:
   - component: {fileID: 1803894749}
   - component: {fileID: 1803894751}
   - component: {fileID: 1803894750}
+  - component: {fileID: 1803894752}
   m_Layer: 5
   m_Name: Position
   m_TagString: Untagged
@@ -13443,6 +13446,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803894748}
   m_CullTransparentMesh: 0
+--- !u!114 &1803894752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803894748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed71bebaa0364cbc95ca1f4cce8e768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerProgress: {fileID: 1937849367}
+  AIProgress: {fileID: 2129113254}
 --- !u!1 &1804043275
 GameObject:
   m_ObjectHideFlags: 0
@@ -14640,6 +14657,7 @@ MonoBehaviour:
   progressStyle: 0
   pointToPointThreshold: 4
   target: {fileID: 0}
+  progressDistance: 0
 --- !u!1 &1940187345
 GameObject:
   m_ObjectHideFlags: 0

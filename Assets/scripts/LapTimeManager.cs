@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class LapTimeManager : MonoBehaviour
     public static int SecondCount;
     public static float MilliCount;
     public static string MilliDisplay;
+    
 
     public GameObject MinuteBox;
     public GameObject SecondBox;
@@ -18,8 +20,9 @@ public class LapTimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MilliCount += Time.deltaTime * 10;
-        MilliDisplay = MilliCount.ToString();
+        
+        MilliCount += (Time.deltaTime * 10);
+        MilliDisplay = Convert.ToInt32(MilliCount).ToString();
         MilliBox.GetComponent<Text>().text = "" + MilliDisplay;
         if(MilliCount>=10)
         {
